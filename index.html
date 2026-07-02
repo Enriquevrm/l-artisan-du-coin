@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouvez le meilleur couvreur dans l'Aude (11) — Devis Offert | L'Artisan du Coin</title>
+    <meta name="description" content="Plateforme locale pour trouver un artisan couvreur vérifié dans l'Aude (Carcassonne, Narbonne, Trèbes...). Obtenez jusqu'à 3 devis toiture offerts en 24h.">
+    
+    <!-- Open Graph / Réseaux Sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lartisanducoin-aude.com/">
+    <meta property="og:title" content="Trouvez le meilleur couvreur dans l'Aude — Devis Offert">
+    <meta property="og:description" content="Mise en relation avec des artisans couvreurs vérifiés (décennale) dans l'Aude. Démoussage, rénovation, urgence fuite.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://lartisanducoin-aude.com/">
+
+    <!-- Fonts (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://lartisanducoin-aude.com/#website",
+          "url": "https://lartisanducoin-aude.com/",
+          "name": "L'Artisan du Coin",
+          "description": "Plateforme de mise en relation avec des couvreurs dans l'Aude",
+          "inLanguage": "fr-FR"
+        },
+        {
+          "@type": "Service",
+          "name": "Mise en relation artisans couvreurs",
+          "provider": {
+            "@type": "Organization",
+            "name": "L'Artisan du Coin",
+            "url": "https://lartisanducoin-aude.com/"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "Aude",
+            "sameAs": "https://fr.wikipedia.org/wiki/Aude_(d%C3%A9partement)"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services de toiture",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Démoussage et nettoyage de toiture"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Rénovation de toiture"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Réparation de fuite urgence"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Le service de mise en relation est-il gratuit ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, notre service est 100% gratuit et sans engagement pour les particuliers. Vous recevez des devis d'artisans locaux que vous êtes libre d'accepter ou non."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment vérifiez-vous les couvreurs ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous vérifions systématiquement l'assurance décennale à jour de nos artisans partenaires, l'existence juridique de leur entreprise, et nous suivons les avis clients après chaque intervention."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Palette Sombre
+                        noir: {
+                            profond: '#0C0A09',
+                            charbon: '#17130F',
+                        },
+                        brun: {
+                            nuit: '#211A14',
+                        },
+                        // Palette Bronze/Or (Accent)
+                        bronze: {
+                            clair: '#CDA97D',
+                            DEFAULT: '#B0865A',
+                        },
+                        cuivre: {
+                            DEFAULT: '#966F49',
+                            fonce: '#7A5738',
+                        },
+                        // Palette Claire (Contenu)
+                        ivoire: '#F6F1E9',
+                        creme: '#EFE7DA',
+                        taupe: '#8A7E6F',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'cta-gradient': 'linear-gradient(135deg, #D4AF7A 0%, #B0865A 100%)',
+                        'dark-gradient': 'linear-gradient(to bottom, #0C0A09, #17130F)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Utilities pour animations fluides */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Style des inputs premium */
+        .premium-input:focus {
+            box-shadow: 0 0 0 2px rgba(205, 169, 125, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans text-noir-charbon bg-ivoire antialiased selection:bg-bronze-clair selection:text-noir-profond flex flex-col min-h-screen">
+
+    <header class="bg-noir-profond border-b border-brun-nuit sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo SEO orienté & Image -->
+            <a href="#" class="flex items-center group h-full py-2">
+                <img src="IMG_1110.jpg" alt="Logo L'Artisan du Coin" class="h-full w-auto object-contain mix-blend-lighten transform group-hover:scale-105 transition-transform duration-300">
+                <span class="sr-only">L'Artisan du Coin - Couvreurs Vérifiés en Occitanie</span>
+            </a>
+
+            <!-- Navigation Desktop -->
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#comment-ca-marche" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors">Comment ça marche</a>
+                <a href="#services" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors">Prestations Toiture</a>
+                <a href="#zones" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors">Zones d'intervention (11)</a>
+                <a href="#artisans" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors flex items-center gap-1">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-bronze-clair"></i> Artisans Vérifiés
+                </a>
+            </nav>
+
+            <!-- CTA Desktop & Téléphone -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="tel:0618244725" class="text-right group">
+                    <span class="block text-xs text-taupe group-hover:text-bronze-clair transition-colors">Une urgence ? Appelez-nous</span>
+                    <span class="block text-sm font-bold text-ivoire flex items-center justify-end gap-1 group-hover:text-bronze-clair transition-colors">
+                        <i data-lucide="phone" class="w-3 h-3"></i> 06 18 24 47 25
+                    </span>
+                </a>
+                <a href="#formulaire-devis" class="bg-cta-gradient text-noir-charbon font-bold text-sm px-6 py-2.5 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                    Recevoir mon devis offert
+                </a>
+            </div>
+
+            <!-- Bouton Mobile -->
+            <button class="md:hidden text-ivoire hover:text-bronze-clair p-2" aria-label="Ouvrir le menu" id="mobile-menu-btn">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile Caché (Implémentation basique pour maquette) -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-noir-profond/95 backdrop-blur-md pt-24 px-6 flex flex-col gap-6">
+        <a href="#comment-ca-marche" class="text-xl font-serif text-ivoire border-b border-brun-nuit pb-2">Comment ça marche</a>
+        <a href="#services" class="text-xl font-serif text-ivoire border-b border-brun-nuit pb-2">Prestations</a>
+        <a href="#zones" class="text-xl font-serif text-ivoire border-b border-brun-nuit pb-2">Zones couvertes</a>
+        <a href="#formulaire-devis" class="mt-4 bg-cta-gradient text-noir-charbon text-center font-bold text-lg px-6 py-4 rounded-lg">Obtenir un devis offert</a>
+    </div>
+
+    <main class="flex-grow">
+        <section class="relative bg-noir-profond py-16 lg:py-24 overflow-hidden">
+            <!-- Image de fond avec overlay sombre -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=1920&q=80" alt="Toiture en tuiles canal dans l'Aude" class="w-full h-full object-cover object-center opacity-20">
+                <div class="absolute inset-0 bg-dark-gradient opacity-90"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Copywriting SEO & Conversion (Gauche) -->
+                    <div class="lg:col-span-7 fade-in-up">
+                        <span class="inline-block py-1 px-3 rounded-full bg-brun-nuit border border-bronze/30 text-bronze-clair text-xs font-semibold tracking-widest uppercase mb-6">
+                            Service 100% Offert — Aude (11)
+                        </span>
+                        
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-ivoire leading-tight mb-6">
+                            Trouvez le meilleur <span class="text-bronze-clair italic">couvreur dans l'Aude</span> — devis offerts sous 24 h
+                        </h1>
+                        
+                        <p class="text-lg md:text-xl text-taupe mb-8 max-w-2xl font-light">
+                            Votre toiture a besoin d'un coup de neuf ? Ne cherchez plus au hasard. Décrivez votre besoin, nous vous mettons en relation avec des artisans locaux vérifiés et assurés près de chez vous.
+                        </p>
+
+                        <!-- Bar de réassurance -->
+                        <div class="flex flex-col sm:flex-row gap-6 mb-8 lg:mb-0">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-brun-nuit flex items-center justify-center border border-bronze/20">
+                                    <i data-lucide="shield-check" class="text-bronze-clair w-5 h-5"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-semibold text-ivoire">Artisans Vérifiés</p>
+                                    <p class="text-taupe text-xs">Assurance Décennale OK</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-brun-nuit flex items-center justify-center border border-bronze/20">
+                                    <i data-lucide="clock" class="text-bronze-clair w-5 h-5"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-semibold text-ivoire">Rapide & Local</p>
+                                    <p class="text-taupe text-xs">Mise en relation en 24h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5" id="formulaire-devis">
+                        <div class="bg-ivoire rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden" style="animation-delay: 0.2s;" class="fade-in-up">
+                            <!-- Liseret déco -->
+                            <div class="absolute top-0 left-0 w-full h-1 bg-cta-gradient"></div>
+                            
+                            <h2 class="text-2xl font-serif font-bold text-noir-charbon mb-2">Décrivez votre projet</h2>
+                            <p class="text-sm text-taupe mb-6">Comparez jusqu'à 3 devis d'artisans audois.</p>
+
+                            <form class="space-y-4" onsubmit="event.preventDefault(); alert('En situation réelle, ceci déclencherait l\'envoi du webhook/email vers le CRM.');">
+                                
+                                <div>
+                                    <label class="block text-xs font-bold text-noir-charbon uppercase tracking-wide mb-1" for="type-travaux">Type de travaux</label>
+                                    <select id="type-travaux" class="w-full bg-white border border-gray-300 text-noir-charbon text-sm rounded-lg focus:ring-bronze-clair focus:border-bronze-clair block p-3 premium-input outline-none transition-shadow" required>
+                                        <option value="" disabled selected>Sélectionnez un besoin...</option>
+                                        <option value="renovation">Rénovation de toiture</option>
+                                        <option value="demoussage">Démoussage / Nettoyage</option>
+                                        <option value="fuite">Réparation fuite (Urgence)</option>
+                                        <option value="zinguerie">Gouttières & Zinguerie</option>
+                                        <option value="autre">Autre demande</option>
+                                    </select>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-noir-charbon uppercase tracking-wide mb-1" for="code-postal">Code Postal</label>
+                                        <input type="text" id="code-postal" placeholder="Ex: 11000" class="w-full bg-white border border-gray-300 text-noir-charbon text-sm rounded-lg focus:ring-bronze-clair focus:border-bronze-clair block p-3 premium-input outline-none transition-shadow" required pattern="[0-9]{5}">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-noir-charbon uppercase tracking-wide mb-1" for="telephone">Téléphone</label>
+                                        <input type="tel" id="telephone" placeholder="06..." class="w-full bg-white border border-gray-300 text-noir-charbon text-sm rounded-lg focus:ring-bronze-clair focus:border-bronze-clair block p-3 premium-input outline-none transition-shadow" required>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold text-noir-charbon uppercase tracking-wide mb-1" for="nom">Nom complet</label>
+                                    <input type="text" id="nom" placeholder="Votre nom" class="w-full bg-white border border-gray-300 text-noir-charbon text-sm rounded-lg focus:ring-bronze-clair focus:border-bronze-clair block p-3 premium-input outline-none transition-shadow" required>
+                                </div>
+
+                                <div class="pt-2">
+                                    <button type="submit" class="w-full bg-cta-gradient text-noir-charbon font-bold text-base px-6 py-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+                                        Recevoir mon devis offert <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    </button>
+                                </div>
+                                
+                                <p class="text-center text-xs text-taupe flex justify-center items-center gap-1 mt-2 mb-4">
+                                    <i data-lucide="lock" class="w-3 h-3"></i> Vos données sont sécurisées (RGPD).
+                                </p>
+
+                                <div class="mt-4 pt-4 border-t border-gray-200 text-center">
+                                    <p class="text-sm text-taupe mb-1">Ou appelez-nous pour un devis offert par téléphone :</p>
+                                    <a href="tel:0618244725" class="inline-flex items-center gap-2 text-xl font-bold text-bronze hover:text-cuivre transition-colors">
+                                        <i data-lucide="phone-call" class="w-5 h-5"></i> 06 18 24 47 25
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comment-ca-marche" class="py-20 bg-ivoire border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-sm font-bold tracking-[0.2em] text-bronze uppercase">Simple & Rapide</span>
+                    <h2 class="mt-2 text-3xl md:text-4xl font-serif font-bold text-noir-charbon">Comment trouver votre couvreur ?</h2>
+                    <p class="mt-4 text-lg text-taupe">Nous simplifions vos démarches. Plus besoin de passer des heures au téléphone pour trouver un artisan disponible.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Step 1 -->
+                    <div class="relative p-8 bg-white rounded-2xl shadow-sm border border-gray-100 text-center group hover:shadow-md transition-shadow">
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-noir-charbon text-bronze-clair flex items-center justify-center font-serif text-xl font-bold border-4 border-ivoire">1</div>
+                        <div class="w-16 h-16 mx-auto bg-creme rounded-full flex items-center justify-center mb-6 mt-4 text-bronze group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="file-edit" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-noir-charbon mb-3">Décrivez votre projet</h3>
+                        <p class="text-taupe text-sm leading-relaxed">Remplissez notre formulaire en 1 minute. Indiquez votre besoin (nettoyage, fuite, rénovation) et votre commune dans l'Aude.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative p-8 bg-white rounded-2xl shadow-sm border border-gray-100 text-center group hover:shadow-md transition-shadow">
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-noir-charbon text-bronze-clair flex items-center justify-center font-serif text-xl font-bold border-4 border-ivoire">2</div>
+                        <div class="w-16 h-16 mx-auto bg-creme rounded-full flex items-center justify-center mb-6 mt-4 text-bronze group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="search-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-noir-charbon mb-3">Nous sélectionnons l'artisan</h3>
+                        <p class="text-taupe text-sm leading-relaxed">Notre équipe identifie les meilleurs couvreurs vérifiés de notre réseau, disponibles rapidement près de chez vous.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative p-8 bg-white rounded-2xl shadow-sm border border-gray-100 text-center group hover:shadow-md transition-shadow">
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-noir-charbon text-bronze-clair flex items-center justify-center font-serif text-xl font-bold border-4 border-ivoire">3</div>
+                        <div class="w-16 h-16 mx-auto bg-creme rounded-full flex items-center justify-center mb-6 mt-4 text-bronze group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="mail-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-noir-charbon mb-3">Recevez vos devis offerts</h3>
+                        <p class="text-taupe text-sm leading-relaxed">Vous êtes contacté sous 24h par le couvreur partenaire pour échanger et recevoir votre devis offert et sans engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-creme">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div class="max-w-2xl">
+                        <span class="text-sm font-bold tracking-[0.2em] text-bronze uppercase">Nos domaines d'expertise</span>
+                        <h2 class="mt-2 text-3xl md:text-4xl font-serif font-bold text-noir-charbon">Des pros pour chaque besoin de toiture</h2>
+                    </div>
+                    <a href="#formulaire-devis" class="text-bronze font-semibold hover:text-cuivre transition-colors flex items-center gap-1">
+                        Estimer mes travaux <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service 1 (Anciennement Service 2) -->
+                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="h-40 bg-gray-200 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Rénovation toiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-noir-charbon mb-2 group-hover:text-bronze transition-colors">Rénovation Complète</h3>
+                            <p class="text-sm text-taupe">Réfection de toiture ancienne, remplacement de tuiles canal, charpente et isolation par l'extérieur (Sarking).</p>
+                        </div>
+                    </a>
+
+                    <!-- Service 2 (Anciennement Service 1) -->
+                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="h-40 bg-gray-200 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Démoussage toiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-noir-charbon mb-2 group-hover:text-bronze transition-colors">Démoussage & Nettoyage</h3>
+                            <p class="text-sm text-taupe">Traitement anti-mousse, lichens et application hydrofuge pour prolonger la durée de vie de vos tuiles.</p>
+                        </div>
+                    </a>
+
+                    <!-- Service 3 -->
+                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="h-40 bg-gray-200 overflow-hidden relative">
+                            <!-- Placeholder image for leak -->
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Réparation fuite toiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-noir-charbon mb-2 group-hover:text-bronze transition-colors">Réparation & Urgence</h3>
+                            <p class="text-sm text-taupe">Intervention rapide pour recherche de fuite, bâchage d'urgence, tuiles cassées ou envolées suite aux intempéries.</p>
+                        </div>
+                    </a>
+
+                    <!-- Service 4 -->
+                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="h-40 bg-gray-200 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=600&q=80" alt="Zinguerie et gouttières" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg text-noir-charbon mb-2 group-hover:text-bronze transition-colors">Gouttières & Zinguerie</h3>
+                            <p class="text-sm text-taupe">Pose et réparation de gouttières (zinc, alu, PVC), abergements de cheminée et étanchéité des fenêtres de toit.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="artisans" class="py-20 bg-noir-charbon border-y border-brun-nuit text-ivoire">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-sm font-bold tracking-[0.2em] text-bronze-clair uppercase">Notre Promesse Qualité</span>
+                        <h2 class="mt-2 text-3xl md:text-4xl font-serif font-bold mb-6">Pourquoi confier votre toiture à notre réseau ?</h2>
+                        <p class="text-taupe text-lg mb-8">L'Artisan du Coin n'est pas un annuaire classique. Nous effectuons un vrai travail de sélection pour vous protéger contre les malfaçons et les arnaques courantes dans le bâtiment.</p>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="mt-1 bg-brun-nuit p-2 rounded text-bronze-clair border border-bronze/20">
+                                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-lg mb-1">Garantie Décennale Contrôlée</strong>
+                                    <p class="text-taupe text-sm">Nous vérifions systématiquement la validité des assurances professionnelles (responsabilité civile et décennale) de nos partenaires.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="mt-1 bg-brun-nuit p-2 rounded text-bronze-clair border border-bronze/20">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-lg mb-1">Ancrage Local 100% Audois</strong>
+                                    <p class="text-taupe text-sm">Pas d'entreprises fantômes. Nos artisans sont implantés dans l'Aude, garantissant un SAV réactif de Carcassonne à Narbonne.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="mt-1 bg-brun-nuit p-2 rounded text-bronze-clair border border-bronze/20">
+                                    <i data-lucide="piggy-bank" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <strong class="block text-lg mb-1">Service 100% Gratuit pour Vous</strong>
+                                    <p class="text-taupe text-sm">La mise en relation et l'établissement des devis par les artisans sont totalement gratuits et sans engagement.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Carte de réassurance visuelle -->
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-bronze to-cuivre rounded-2xl blur opacity-30"></div>
+                        <div class="relative bg-noir-profond rounded-2xl p-8 border border-brun-nuit shadow-2xl">
+                            <div class="text-center mb-8 border-b border-brun-nuit pb-8">
+                                <div class="text-bronze-clair flex justify-center mb-4">
+                                    <i data-lucide="award" class="w-16 h-16"></i>
+                                </div>
+                                <h3 class="text-2xl font-serif font-bold text-ivoire">Charte Confiance</h3>
+                                <p class="text-taupe mt-2">Plus de 500 mises en relation réussies en 2025.</p>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <div class="text-center">
+                                    <span class="block text-3xl font-bold text-bronze-clair mb-1">24h</span>
+                                    <span class="text-taupe uppercase text-xs tracking-wider">Réponse</span>
+                                </div>
+                                <div class="w-px h-12 bg-brun-nuit"></div>
+                                <div class="text-center">
+                                    <span class="block text-3xl font-bold text-bronze-clair mb-1">100%</span>
+                                    <span class="text-taupe uppercase text-xs tracking-wider">Vérifiés</span>
+                                </div>
+                                <div class="w-px h-12 bg-brun-nuit"></div>
+                                <div class="text-center">
+                                    <span class="block text-3xl font-bold text-bronze-clair mb-1">4.8</span>
+                                    <span class="text-taupe uppercase text-xs tracking-wider">Avis Moy.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="zones" class="py-20 bg-ivoire">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-4">Trouvez un artisan près de chez vous dans l'Aude</h2>
+                    <p class="text-taupe">Notre réseau couvre l'intégralité du département 11. Sélectionnez votre zone géographique pour en savoir plus ou demander votre devis toiture localisé.</p>
+                </div>
+
+                <!-- Simulation de maillage interne SEO (Pilliers Géographiques) -->
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+                    <a href="#carcassonne" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Carcassonne</a>
+                    <a href="#narbonne" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Narbonne</a>
+                    <a href="#castelnaudary" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Castelnaudary</a>
+                    <a href="#limoux" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Limoux</a>
+                    <a href="#lezignan" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Lézignan-Corbières</a>
+                    <a href="#trebes" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Trèbes</a>
+                    <a href="#bram" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Bram & Environs</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-creme border-t border-gray-200">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-10 text-center">Questions fréquentes (FAQ)</h2>
+                
+                <div class="space-y-4">
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            Le service de mise en relation est-il vraiment gratuit ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            Oui, l'utilisation de la plateforme L'Artisan du Coin est 100% gratuite pour les particuliers. Nous sommes rémunérés par notre réseau d'artisans partenaires lorsqu'ils décident de répondre à votre demande de devis.
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            En combien de temps vais-je recevoir des devis ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            En général, vous êtes contacté(e) sous 24 à 48 heures par téléphone pour convenir d'un rendez-vous sur place. Le devis formel est ensuite envoyé rapidement après la visite technique pour évaluer l'état exact de votre toiture.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="bg-noir-profond border-t border-bronze/30 py-16 text-center px-4">
+        <h2 class="text-3xl font-serif font-bold text-ivoire mb-4">Prêt à rénover votre toiture ?</h2>
+        <p class="text-taupe mb-8 max-w-xl mx-auto">N'attendez pas que les petites fuites deviennent de gros dégâts. Demandez votre estimation offerte aujourd'hui.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#formulaire-devis" class="inline-flex bg-cta-gradient text-noir-charbon font-bold text-lg px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 items-center gap-2 w-full sm:w-auto justify-center">
+                Demander mon devis offert <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+            </a>
+            <span class="text-taupe hidden sm:inline-block">ou</span>
+            <a href="tel:0618244725" class="inline-flex bg-brun-nuit border border-bronze/30 text-bronze-clair font-bold text-lg px-8 py-4 rounded-lg shadow-xl hover:bg-noir-charbon hover:-translate-y-1 transition-all duration-300 items-center gap-2 w-full sm:w-auto justify-center">
+                <i data-lucide="phone" class="w-5 h-5"></i> 06 18 24 47 25
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-noir-charbon border-t border-brun-nuit pt-16 pb-8 text-taupe text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <img src="IMG_1110.jpg" alt="Logo L'Artisan du Coin" class="h-16 w-auto object-contain mix-blend-lighten mb-4 -ml-2">
+                    <p class="mb-4">Votre plateforme de mise en relation locale pour vos travaux de toiture dans l'Aude. Indépendante, gratuite et sécurisée.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Services toiture</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Démoussage & Nettoyage</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Réfection Toiture</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Traitement Hydrofuge</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Zinguerie & Gouttières</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Villes Principales (11)</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Carcassonne</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Narbonne</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Castelnaudary</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Lézignan</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Informations</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Comment ça marche ?</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Contactez-nous</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Politique de confidentialité (RGPD)</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-brun-nuit pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 L'Artisan du Coin - Tous droits réservés.</p>
+                <div class="flex gap-4">
+                    <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> Basé dans l'Aude (11)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-noir-profond/95 backdrop-blur-md border-t border-brun-nuit z-50">
+        <a href="#formulaire-devis" class="block w-full text-center bg-cta-gradient text-noir-charbon font-bold text-base px-4 py-3 rounded-lg shadow-lg">
+            Devis Toiture Offert
+        </a>
+    </div>
+
+    <!-- Initialisation des icônes et scripts UI -->
+    <script>
+        // Initialiser Lucide Icons
+        lucide.createIcons();
+
+        // Menu Mobile simple
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = menu.querySelectorAll('a');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
