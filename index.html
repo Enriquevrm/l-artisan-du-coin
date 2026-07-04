@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trouvez le meilleur couvreur dans l'Aude (11) — Devis Offert | L'Artisan du Coin</title>
-    <meta name="description" content="Plateforme locale pour trouver un artisan couvreur vérifié dans l'Aude (Carcassonne, Narbonne, Trèbes...). Obtenez jusqu'à 3 devis toiture offerts en 24h.">
-    
+    <title>Couvreur dans l'Aude — Devis Offert | L'Artisan du Coin</title>
+    <meta name="description" content="Trouvez un artisan couvreur vérifié dans l'Aude (Carcassonne, Narbonne, Castelnaudary...). Démoussage, nettoyage, réparation : 3 devis offerts en 24 h.">
+
     <!-- Open Graph / Réseaux Sociaux -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lartisanducoin-aude.com/">
-    <meta property="og:title" content="Trouvez le meilleur couvreur dans l'Aude — Devis Offert">
+    <meta property="og:title" content="Couvreur dans l'Aude — Devis Offert | L'Artisan du Coin">
     <meta property="og:description" content="Mise en relation avec des artisans couvreurs vérifiés (décennale) dans l'Aude. Démoussage, rénovation, urgence fuite.">
-    
+    <meta property="og:image" content="https://lartisanducoin-aude.com/IMG_1110.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="L'Artisan du Coin">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Couvreur dans l'Aude — Devis Offert | L'Artisan du Coin">
+    <meta name="twitter:description" content="Mise en relation avec des artisans couvreurs vérifiés (décennale) dans l'Aude. Démoussage, rénovation, urgence fuite.">
+    <meta name="twitter:image" content="https://lartisanducoin-aude.com/IMG_1110.jpg">
+
     <!-- Canonical -->
     <link rel="canonical" href="https://lartisanducoin-aude.com/">
 
@@ -19,9 +28,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-    
+
     <!-- Icons (Lucide via CDN) -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
     <script type="application/ld+json">
     {
@@ -33,16 +42,43 @@
           "url": "https://lartisanducoin-aude.com/",
           "name": "L'Artisan du Coin",
           "description": "Plateforme de mise en relation avec des couvreurs dans l'Aude",
-          "inLanguage": "fr-FR"
+          "inLanguage": "fr-FR",
+          "publisher": { "@id": "https://lartisanducoin-aude.com/#localbusiness" }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://lartisanducoin-aude.com/#localbusiness",
+          "name": "L'Artisan du Coin",
+          "url": "https://lartisanducoin-aude.com/",
+          "image": "https://lartisanducoin-aude.com/IMG_1110.jpg",
+          "telephone": "+33618244725",
+          "email": "contact@lartisanducoin-aude.com",
+          "priceRange": "€€",
+          "description": "Plateforme de mise en relation entre particuliers et artisans couvreurs vérifiés dans l'Aude (11) : démoussage, nettoyage, hydrofuge et réparation de toiture.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Occitanie",
+            "addressCountry": "FR"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Carcassonne", "postalCode": "11000" },
+            { "@type": "City", "name": "Narbonne", "postalCode": "11100" },
+            { "@type": "City", "name": "Castelnaudary", "postalCode": "11400" },
+            { "@type": "City", "name": "Lézignan-Corbières", "postalCode": "11200" },
+            { "@type": "City", "name": "Limoux", "postalCode": "11300" },
+            { "@type": "City", "name": "Coursan", "postalCode": "11110" },
+            { "@type": "City", "name": "Port-la-Nouvelle", "postalCode": "11210" },
+            { "@type": "City", "name": "Sigean", "postalCode": "11130" },
+            { "@type": "City", "name": "Trèbes", "postalCode": "11800" },
+            { "@type": "AdministrativeArea", "name": "Aude", "sameAs": "https://fr.wikipedia.org/wiki/Aude_(d%C3%A9partement)" }
+          ],
+          "knowsAbout": ["Couverture", "Démoussage de toiture", "Nettoyage de toiture", "Traitement hydrofuge", "Réparation de fuite", "Tuile canal"]
         },
         {
           "@type": "Service",
           "name": "Mise en relation artisans couvreurs",
-          "provider": {
-            "@type": "Organization",
-            "name": "L'Artisan du Coin",
-            "url": "https://lartisanducoin-aude.com/"
-          },
+          "serviceType": "Travaux de couverture et entretien de toiture",
+          "provider": { "@id": "https://lartisanducoin-aude.com/#localbusiness" },
           "areaServed": {
             "@type": "State",
             "name": "Aude",
@@ -56,7 +92,32 @@
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Démoussage et nettoyage de toiture"
+                  "name": "Nettoyage de toiture",
+                  "url": "https://lartisanducoin-aude.com/nettoyage-toiture-aude/"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Démoussage de toiture",
+                  "url": "https://lartisanducoin-aude.com/demoussage-toiture-aude/"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Traitement hydrofuge de toiture",
+                  "url": "https://lartisanducoin-aude.com/hydrofuge-toiture-aude/"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Réparation de toiture et urgence fuite",
+                  "url": "https://lartisanducoin-aude.com/reparation-toiture-aude/"
                 }
               },
               {
@@ -64,13 +125,6 @@
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Rénovation de toiture"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Réparation de fuite urgence"
                 }
               }
             ]
@@ -93,6 +147,38 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Nous vérifions systématiquement l'assurance décennale à jour de nos artisans partenaires, l'existence juridique de leur entreprise, et nous suivons les avis clients après chaque intervention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment trouver un bon couvreur dans l'Aude ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vérifiez trois points essentiels : l'assurance décennale à jour, l'immatriculation de l'entreprise (SIRET) et les avis de clients récents. En passant par L'Artisan du Coin, ces contrôles sont déjà effectués : nous vous mettons en relation uniquement avec des couvreurs vérifiés de Carcassonne à Narbonne, gratuitement et sans engagement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quel est le prix d'un démoussage dans l'Aude ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Comptez généralement entre 15 et 30 € par m² pour un démoussage complet dans l'Aude, traitement anti-mousse compris, selon la surface, la pente et l'accessibilité du toit. Un traitement hydrofuge complémentaire est souvent proposé (environ 8 à 15 € par m²). Le plus sûr reste de comparer plusieurs devis établis après visite : avec L'Artisan du Coin, c'est offert et sans engagement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quand nettoyer sa toiture ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les meilleures périodes sont le printemps et le début de l'automne, par temps sec, avant les grosses pluies méditerranéennes. Dans l'Aude, un contrôle visuel est aussi conseillé après chaque épisode de vent fort (cers ou autan) pour repérer les tuiles déplacées avant qu'une fuite n'apparaisse."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Pourquoi démousser des tuiles canal ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La tuile canal du Languedoc est poreuse : la mousse y retient l'humidité en permanence, ce qui la rend gélive et peut la faire éclater en hiver. Les mousses obstruent aussi les canaux d'écoulement de l'eau, favorisant débordements et infiltrations. Un démoussage régulier, suivi d'un hydrofuge, prolonge la durée de vie de la couverture de plusieurs années."
               }
             }
           ]
@@ -158,6 +244,11 @@
         .premium-input:focus {
             box-shadow: 0 0 0 2px rgba(205, 169, 125, 0.3);
         }
+        /* Accessibilité : focus clavier visible */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+            outline: 2px solid #CDA97D;
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body class="font-sans text-noir-charbon bg-ivoire antialiased selection:bg-bronze-clair selection:text-noir-profond flex flex-col min-h-screen">
@@ -165,13 +256,13 @@
     <header class="bg-noir-profond border-b border-brun-nuit sticky top-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo SEO orienté & Image -->
-            <a href="#" class="flex items-center group h-full py-2">
-                <img src="IMG_1110.jpg" alt="Logo L'Artisan du Coin" class="h-full w-auto object-contain mix-blend-lighten transform group-hover:scale-105 transition-transform duration-300">
-                <span class="sr-only">L'Artisan du Coin - Couvreurs Vérifiés en Occitanie</span>
+            <a href="/" class="flex items-center group h-full py-2">
+                <img src="IMG_1110.jpg" alt="Logo L'Artisan du Coin, couvreurs vérifiés dans l'Aude" class="h-full w-auto object-contain mix-blend-lighten transform group-hover:scale-105 transition-transform duration-300">
+                <span class="sr-only">L'Artisan du Coin - Couvreurs Vérifiés dans l'Aude</span>
             </a>
 
             <!-- Navigation Desktop -->
-            <nav class="hidden lg:flex items-center space-x-8">
+            <nav class="hidden lg:flex items-center space-x-8" aria-label="Navigation principale">
                 <a href="#comment-ca-marche" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors">Comment ça marche</a>
                 <a href="#services" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors">Prestations Toiture</a>
                 <a href="#zones" class="text-sm font-medium text-ivoire hover:text-bronze-clair transition-colors">Zones d'intervention (11)</a>
@@ -194,7 +285,7 @@
             </div>
 
             <!-- Bouton Mobile -->
-            <button class="md:hidden text-ivoire hover:text-bronze-clair p-2" aria-label="Ouvrir le menu" id="mobile-menu-btn">
+            <button class="md:hidden text-ivoire hover:text-bronze-clair p-2" aria-label="Ouvrir le menu" aria-expanded="false" id="mobile-menu-btn">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
@@ -212,7 +303,7 @@
         <section class="relative bg-noir-profond py-16 lg:py-24 overflow-hidden">
             <!-- Image de fond avec overlay sombre -->
             <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=1920&q=80" alt="Toiture en tuiles canal dans l'Aude" class="w-full h-full object-cover object-center opacity-20">
+                <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=1920&q=80" alt="Toiture en tuiles canal dans l'Aude" class="w-full h-full object-cover object-center opacity-20" fetchpriority="high">
                 <div class="absolute inset-0 bg-dark-gradient opacity-90"></div>
             </div>
 
@@ -257,7 +348,7 @@
                     </div>
 
                     <div class="lg:col-span-5" id="formulaire-devis">
-                        <div class="bg-ivoire rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden" style="animation-delay: 0.2s;" class="fade-in-up">
+                        <div class="bg-ivoire rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden fade-in-up" style="animation-delay: 0.2s;">
                             <!-- Liseret déco -->
                             <div class="absolute top-0 left-0 w-full h-1 bg-cta-gradient"></div>
                             
@@ -373,9 +464,9 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Service 1 (Anciennement Service 2) -->
-                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                    <a href="#formulaire-devis" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
                         <div class="h-40 bg-gray-200 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Rénovation toiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Rénovation complète de toiture en tuile canal dans l'Aude" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-5">
@@ -385,9 +476,9 @@
                     </a>
 
                     <!-- Service 2 (Anciennement Service 1) -->
-                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                    <a href="/demoussage-toiture-aude/" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
                         <div class="h-40 bg-gray-200 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Démoussage toiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Démoussage de toiture dans l'Aude par un couvreur" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-5">
@@ -397,10 +488,10 @@
                     </a>
 
                     <!-- Service 3 -->
-                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                    <a href="/reparation-toiture-aude/" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
                         <div class="h-40 bg-gray-200 overflow-hidden relative">
                             <!-- Placeholder image for leak -->
-                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Réparation fuite toiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Réparation de fuite de toiture en urgence dans l'Aude" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-5">
@@ -410,9 +501,9 @@
                     </a>
 
                     <!-- Service 4 -->
-                    <a href="#" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
+                    <a href="/reparation-toiture-aude/" class="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-lg transition-all hover:-translate-y-1">
                         <div class="h-40 bg-gray-200 overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=600&q=80" alt="Zinguerie et gouttières" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=600&q=80" alt="Pose de gouttières et zinguerie sur une toiture audoise" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-noir-profond/20 group-hover:bg-transparent transition-colors"></div>
                         </div>
                         <div class="p-5">
@@ -503,20 +594,22 @@
                     <p class="text-taupe">Notre réseau couvre l'intégralité du département 11. Sélectionnez votre zone géographique pour en savoir plus ou demander votre devis toiture localisé.</p>
                 </div>
 
-                <!-- Simulation de maillage interne SEO (Pilliers Géographiques) -->
+                <!-- Maillage interne SEO (Pilliers Géographiques) -->
                 <div class="flex flex-wrap justify-center gap-3 md:gap-4">
-                    <a href="#carcassonne" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Carcassonne</a>
-                    <a href="#narbonne" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Narbonne</a>
-                    <a href="#castelnaudary" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Castelnaudary</a>
-                    <a href="#limoux" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Limoux</a>
-                    <a href="#lezignan" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Lézignan-Corbières</a>
-                    <a href="#trebes" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur Trèbes</a>
-                    <a href="#bram" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Bram & Environs</a>
+                    <a href="/couvreur-carcassonne/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Carcassonne</a>
+                    <a href="/couvreur-narbonne/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Narbonne</a>
+                    <a href="/couvreur-castelnaudary/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Castelnaudary</a>
+                    <a href="/couvreur-lezignan-corbieres/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Lézignan-Corbières</a>
+                    <a href="/couvreur-limoux/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Limoux</a>
+                    <a href="/couvreur-coursan/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Coursan</a>
+                    <a href="/couvreur-port-la-nouvelle/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Port-la-Nouvelle</a>
+                    <a href="/couvreur-sigean/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Sigean</a>
+                    <a href="/couvreur-trebes/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Trèbes</a>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-creme border-t border-gray-200">
+        <section id="faq" class="py-20 bg-creme border-t border-gray-200">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-10 text-center">Questions fréquentes (FAQ)</h2>
                 
@@ -544,6 +637,54 @@
                             En général, vous êtes contacté(e) sous 24 à 48 heures par téléphone pour convenir d'un rendez-vous sur place. Le devis formel est ensuite envoyé rapidement après la visite technique pour évaluer l'état exact de votre toiture.
                         </div>
                     </details>
+
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            Comment trouver un bon couvreur dans l'Aude ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            Vérifiez trois points essentiels : l'assurance décennale à jour, l'immatriculation de l'entreprise (SIRET) et les avis de clients récents. En passant par L'Artisan du Coin, ces contrôles sont déjà effectués : nous vous mettons en relation uniquement avec des couvreurs vérifiés de Carcassonne à Narbonne, gratuitement et sans engagement.
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            Quel est le prix d'un démoussage dans l'Aude ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            Comptez généralement entre 15 et 30 € par m² pour un <a href="/demoussage-toiture-aude/" class="text-bronze hover:text-cuivre font-semibold transition-colors">démoussage complet dans l'Aude</a>, traitement anti-mousse compris, selon la surface, la pente et l'accessibilité du toit. Un traitement hydrofuge complémentaire est souvent proposé (environ 8 à 15 € par m²). Le plus sûr reste de comparer plusieurs devis établis après visite : avec L'Artisan du Coin, c'est offert et sans engagement.
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            Quand nettoyer sa toiture ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            Les meilleures périodes sont le printemps et le début de l'automne, par temps sec, avant les grosses pluies méditerranéennes. Dans l'Aude, un contrôle visuel est aussi conseillé après chaque épisode de vent fort (cers ou autan) pour repérer les tuiles déplacées avant qu'une fuite n'apparaisse. En savoir plus sur le <a href="/nettoyage-toiture-aude/" class="text-bronze hover:text-cuivre font-semibold transition-colors">nettoyage de toiture dans l'Aude</a>.
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            Pourquoi démousser des tuiles canal ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            La tuile canal du Languedoc est poreuse : la mousse y retient l'humidité en permanence, ce qui la rend gélive et peut la faire éclater en hiver. Les mousses obstruent aussi les canaux d'écoulement de l'eau, favorisant débordements et infiltrations. Un démoussage régulier, suivi d'un <a href="/hydrofuge-toiture-aude/" class="text-bronze hover:text-cuivre font-semibold transition-colors">traitement hydrofuge</a>, prolonge la durée de vie de la couverture de plusieurs années.
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -568,37 +709,46 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                 <div class="col-span-1 md:col-span-1">
-                    <img src="IMG_1110.jpg" alt="Logo L'Artisan du Coin" class="h-16 w-auto object-contain mix-blend-lighten mb-4 -ml-2">
+                    <img src="IMG_1110.jpg" alt="Logo L'Artisan du Coin, couvreurs vérifiés dans l'Aude" class="h-16 w-auto object-contain mix-blend-lighten mb-4 -ml-2" loading="lazy">
                     <p class="mb-4">Votre plateforme de mise en relation locale pour vos travaux de toiture dans l'Aude. Indépendante, gratuite et sécurisée.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Services toiture</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Démoussage & Nettoyage</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Réfection Toiture</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Traitement Hydrofuge</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Zinguerie & Gouttières</a></li>
+                        <li><a href="tel:0618244725" class="hover:text-bronze-clair transition-colors flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> 06 18 24 47 25</a></li>
+                        <li><a href="mailto:contact@lartisanducoin-aude.com" class="hover:text-bronze-clair transition-colors flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> contact@lartisanducoin-aude.com</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Villes Principales (11)</h4>
+                    <h3 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Services toiture dans l'Aude</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Carcassonne</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Narbonne</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Castelnaudary</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Couvreur Lézignan</a></li>
+                        <li><a href="/nettoyage-toiture-aude/" class="hover:text-bronze-clair transition-colors">Nettoyage de toiture dans l'Aude</a></li>
+                        <li><a href="/demoussage-toiture-aude/" class="hover:text-bronze-clair transition-colors">Démoussage de toiture dans l'Aude</a></li>
+                        <li><a href="/hydrofuge-toiture-aude/" class="hover:text-bronze-clair transition-colors">Traitement hydrofuge de toiture</a></li>
+                        <li><a href="/reparation-toiture-aude/" class="hover:text-bronze-clair transition-colors">Réparation de toiture &amp; urgence fuite</a></li>
                     </ul>
                 </div>
 
-                <div>
-                    <h4 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Informations</h4>
+                <nav aria-label="Nos zones d'intervention dans l'Aude">
+                    <h3 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Nos zones d'intervention dans l'Aude</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Comment ça marche ?</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Contactez-nous</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Mentions légales</a></li>
-                        <li><a href="#" class="hover:text-bronze-clair transition-colors">Politique de confidentialité (RGPD)</a></li>
+                        <li><a href="/couvreur-carcassonne/" class="hover:text-bronze-clair transition-colors">Couvreur à Carcassonne</a></li>
+                        <li><a href="/couvreur-narbonne/" class="hover:text-bronze-clair transition-colors">Couvreur à Narbonne</a></li>
+                        <li><a href="/couvreur-castelnaudary/" class="hover:text-bronze-clair transition-colors">Couvreur à Castelnaudary</a></li>
+                        <li><a href="/couvreur-lezignan-corbieres/" class="hover:text-bronze-clair transition-colors">Couvreur à Lézignan-Corbières</a></li>
+                        <li><a href="/couvreur-limoux/" class="hover:text-bronze-clair transition-colors">Couvreur à Limoux</a></li>
+                        <li><a href="/couvreur-coursan/" class="hover:text-bronze-clair transition-colors">Couvreur à Coursan</a></li>
+                        <li><a href="/couvreur-port-la-nouvelle/" class="hover:text-bronze-clair transition-colors">Couvreur à Port-la-Nouvelle</a></li>
+                        <li><a href="/couvreur-sigean/" class="hover:text-bronze-clair transition-colors">Couvreur à Sigean</a></li>
+                        <li><a href="/couvreur-trebes/" class="hover:text-bronze-clair transition-colors">Couvreur à Trèbes</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <h3 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Informations</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#comment-ca-marche" class="hover:text-bronze-clair transition-colors">Comment ça marche ?</a></li>
+                        <li><a href="mailto:contact@lartisanducoin-aude.com" class="hover:text-bronze-clair transition-colors">Contactez-nous</a></li>
+                        <li><a href="#artisans" class="hover:text-bronze-clair transition-colors">Notre charte confiance</a></li>
+                        <li><a href="#faq" class="hover:text-bronze-clair transition-colors">Questions fréquentes</a></li>
                     </ul>
                 </div>
             </div>
@@ -620,21 +770,25 @@
 
     <!-- Initialisation des icônes et scripts UI -->
     <script>
-        // Initialiser Lucide Icons
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialiser Lucide Icons (script chargé en defer)
+            if (window.lucide) lucide.createIcons();
 
-        // Menu Mobile simple
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const links = menu.querySelectorAll('a');
+            // Menu Mobile simple
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const links = menu.querySelectorAll('a');
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+            btn.addEventListener('click', () => {
+                const opened = menu.classList.toggle('hidden') === false;
+                btn.setAttribute('aria-expanded', opened ? 'true' : 'false');
+            });
 
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                });
             });
         });
     </script>
