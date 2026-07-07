@@ -1,8 +1,9 @@
 # Mots-clés ciblés par page — lartisanducoin-aude.com
 
 Positionnement : plateforme de mise en relation avec les meilleurs couvreurs charpentiers de l'Aude.
-Cœur de métier mis en avant : **rénovation de toiture, couverture (tuile canal, ardoise, zinc), charpente, isolation par l'extérieur**.
+Cœur de métier mis en avant : **rénovation de toiture, réfection de couverture, couverture (tuile canal, ardoise, zinc), charpente**.
 Aucun prix affiché sur le site : le chiffrage arrive après le contact (devis offert après visite).
+Téléphone affiché uniquement dans le footer ; les boutons de devis sont l'action principale.
 Entretien (démoussage, nettoyage, hydrofuge) : secondaire.
 
 Stratégie : 1 page = 1 intention de recherche principale + variantes naturelles.
@@ -29,7 +30,7 @@ Aucun bourrage : chaque mot-clé apparaît dans le title, le H1 ou les H2, puis 
 
 Structure type d'une page ville : H1 « Couvreur charpentier à [Ville] — Rénovation de toiture | Devis Offert »,
 sections locales (quartiers, climat, tuiles), section « Rénovation de toiture et charpente à [Ville] »,
-grille des 5 prestations principales, puis section démoussage/nettoyage **en bas de page** (secondaire).
+grille des 5 prestations principales (rénovation, réfection, couverture, charpente, réparation), puis section démoussage/nettoyage **en bas de page** (secondaire).
 
 ## Pages services
 
@@ -37,10 +38,10 @@ grille des 5 prestations principales, puis section démoussage/nettoyage **en ba
 
 | Page | Mot-clé principal | Secondaires / longue traîne |
 |---|---|---|
-| `/renovation-toiture-aude/` | rénovation toiture Aude | réfection toiture, écran de sous-toiture, rénover ou réparer, devis toiture Aude |
+| `/renovation-toiture-aude/` | rénovation toiture Aude | rénover ou réparer, reprise de charpente, devis toiture Aude |
+| `/refection-couverture-aude/` | réfection couverture Aude | écran de sous-toiture HPV, dépose couverture, réfection des rives, réfection toiture |
 | `/couverture-aude/` | couverture Aude | tuile canal, tuile mécanique, ardoise, bac acier, zinc joint debout, pente tuile canal |
 | `/charpente-aude/` | charpentier Aude | charpente Aude, traitement charpente, insectes xylophages, termites Aude, fermettes combles |
-| `/isolation-toiture-aude/` | isolation toiture Aude | sarking, isolation par l'extérieur, confort été, MaPrimeRénov toiture |
 
 ### Secondaires (entretien)
 
