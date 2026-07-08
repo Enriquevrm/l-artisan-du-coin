@@ -47,13 +47,14 @@ grille des 5 prestations principales (rénovation, réfection, couverture, charp
 
 | Page | Mot-clé principal | Secondaires / longue traîne |
 |---|---|---|
+| `/zinguerie-aude/` | zinguerie Aude | gouttières Aude, solin cheminée, abergement, chéneau |
 | `/reparation-toiture-aude/` | réparation toiture Aude | fuite toiture, tuiles envolées vent, couvreur urgence Aude, bâchage, assurance tempête |
 | `/demoussage-toiture-aude/` | démoussage toiture Aude | prix démoussage, traitement anti-mousse, démoussage tuile canal |
 | `/nettoyage-toiture-aude/` | nettoyage toiture Aude | nettoyage tuile canal, prix nettoyage toiture, nettoyage gouttières |
 | `/hydrofuge-toiture-aude/` | hydrofuge toiture Aude | traitement hydrofuge tuile, imperméabilisation toiture, hydrofuge coloré |
 
 ## Maillage interne
-- Footer global : bloc « Nos zones d'intervention dans l'Aude » → 9 pages villes (ancres « Couvreur à [Ville] ») + 7 pages services (rénovation en tête).
+- Footer global : bloc « Nos zones d'intervention dans l'Aude » → 9 pages villes (ancres « Couvreur à [Ville] ») + pages services (rénovation en tête).
 - Pages villes → 5 prestations principales (cartes) + entretien en liens secondaires + 2-3 villes voisines.
 - Pages services → toutes les pages villes.
 - Accueil → toutes les pages (cartes services, pilules entretien, section zones, FAQ, footer).
