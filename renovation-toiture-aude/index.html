@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://lartisanducoin-aude.com/renovation-toiture-aude/">
     <meta property="og:title" content="Rénovation de Toiture dans l'Aude (11) — Devis Offert">
     <meta property="og:description" content="Rénovation de toiture dans l'Aude par des couvreurs vérifiés : dépose, charpente, couverture neuve en tuile canal ou mécanique. Devis offerts. ☎ 06 18 24 47 25">
-    <meta property="og:image" content="https://lartisanducoin-aude.com/IMG_1110.jpg">
+    <meta property="og:image" content="https://lartisanducoin-aude.com/assets/og-image.png">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="L'Artisan du Coin">
 
@@ -19,14 +19,18 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rénovation de Toiture dans l'Aude (11) — Devis Offert">
     <meta name="twitter:description" content="Rénovation de toiture dans l'Aude par des couvreurs vérifiés : dépose, charpente, couverture neuve en tuile canal ou mécanique. Devis offerts. ☎ 06 18 24 47 25">
-    <meta name="twitter:image" content="https://lartisanducoin-aude.com/IMG_1110.jpg">
+    <meta name="twitter:image" content="https://lartisanducoin-aude.com/assets/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://lartisanducoin-aude.com/renovation-toiture-aude/">
 
-    <!-- Fonts (Google Fonts) -->
+    <!-- Fonts (Google Fonts) & images -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 
     <!-- Icons (Lucide via CDN) -->
@@ -41,11 +45,11 @@
           "@id": "https://lartisanducoin-aude.com/#localbusiness",
           "name": "L'Artisan du Coin",
           "url": "https://lartisanducoin-aude.com/",
-          "image": "https://lartisanducoin-aude.com/IMG_1110.jpg",
+          "image": "https://lartisanducoin-aude.com/assets/og-image.png",
           "telephone": "+33618244725",
           "email": "contact@lartisanducoin-aude.com",
           "priceRange": "€€",
-          "description": "Plateforme de mise en relation entre particuliers et artisans couvreurs charpentiers vérifiés dans l'Aude (11) : rénovation de toiture, couverture, charpente, zinguerie — et l'entretien (démoussage, nettoyage, hydrofuge).",
+          "description": "Plateforme de mise en relation entre particuliers et artisans couvreurs charpentiers vérifiés dans l'Aude (11) : rénovation de toiture, réfection de couverture, charpente — et l'entretien (démoussage, nettoyage, hydrofuge).",
           "address": {
             "@type": "PostalAddress",
             "addressRegion": "Occitanie",
@@ -105,10 +109,10 @@
           ],
           "knowsAbout": [
             "Rénovation de toiture",
+            "Réfection de couverture",
             "Couverture",
             "Charpente",
-            "Zinguerie",
-            "Isolation de toiture par l'extérieur",
+            "Écran de sous-toiture",
             "Tuile canal",
             "Réparation de fuite",
             "Démoussage de toiture"
@@ -202,7 +206,15 @@
               "name": "Quel est le prix d'une rénovation de toiture dans l'Aude ?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Comptez généralement entre 150 et 300 € par m² pour une réfection complète (dépose, écran de sous-toiture, couverture neuve), selon le matériau et la complexité du toit. Une reprise de charpente ou une isolation par l'extérieur s'ajoutent à ce budget. Comparez plusieurs devis détaillés : via notre réseau, ils sont offerts et établis après visite."
+                "text": "Le budget dépend du matériau de couverture, de la surface, de la complexité du toit et de l'état de la charpente — deux maisons voisines peuvent avoir des chiffrages très différents. Seule une visite technique permet une estimation sérieuse : via notre réseau, le devis détaillé est offert et sans engagement, et vous comparez plusieurs propositions avant de décider."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Rénovation complète ou réfection de couverture : que choisir ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Si la charpente est saine, une réfection de couverture suffit : dépose, écran de sous-toiture, couverture neuve et rives, sans toucher à la structure. Si la charpente montre des faiblesses (affaissement, bois attaqués), la rénovation complète s'impose. Le diagnostic se fait lors de la visite technique offerte."
               }
             },
             {
@@ -297,7 +309,37 @@
             outline: 2px solid #CDA97D;
             outline-offset: 2px;
         }
+        /* Apparitions au scroll (IntersectionObserver) */
+        .reveal, .reveal-group > * {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .7s cubic-bezier(.22, .61, .36, 1), transform .7s cubic-bezier(.22, .61, .36, 1);
+        }
+        .reveal.is-visible, .reveal-group.is-visible > * {
+            opacity: 1;
+            transform: none;
+        }
+        .reveal-group.is-visible > *:nth-child(2) { transition-delay: .09s; }
+        .reveal-group.is-visible > *:nth-child(3) { transition-delay: .18s; }
+        .reveal-group.is-visible > *:nth-child(4) { transition-delay: .27s; }
+        .reveal-group.is-visible > *:nth-child(5) { transition-delay: .36s; }
+        .reveal-group.is-visible > *:nth-child(6) { transition-delay: .45s; }
+        /* Respect de prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .reveal, .reveal-group > *, .fade-in-up {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+                animation: none !important;
+            }
+        }
     </style>
+    <noscript>
+        <style>
+            .reveal, .reveal-group > * { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
 </head>
 <body class="font-sans text-noir-charbon bg-ivoire antialiased selection:bg-bronze-clair selection:text-noir-profond flex flex-col min-h-screen">
 
@@ -305,7 +347,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo SEO orienté & Image -->
             <a href="/" class="flex items-center group h-full py-2">
-                <img src="/IMG_1110.jpg" alt="Logo L'Artisan du Coin, couvreurs vérifiés dans l'Aude" class="h-full w-auto object-contain mix-blend-lighten transform group-hover:scale-105 transition-transform duration-300">
+                <svg class="h-11 w-auto transform group-hover:scale-105 transition-transform duration-300" viewBox="0 0 250 58" role="img" aria-label="L'Artisan du Coin">
+                    <defs>
+                        <linearGradient id="or-logo-h" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#D4AF7A"/>
+                            <stop offset="1" stop-color="#966F49"/>
+                        </linearGradient>
+                    </defs>
+                    <text x="125" y="32" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="600" font-size="31" letter-spacing="3" fill="url(#or-logo-h)">L&#8217;ARTISAN</text>
+                    <text x="125" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" letter-spacing="9" fill="#CDA97D">DU COIN</text>
+                </svg>
                 <span class="sr-only">L'Artisan du Coin - Couvreurs Vérifiés dans l'Aude</span>
             </a>
 
@@ -319,15 +370,9 @@
                 </a>
             </nav>
 
-            <!-- CTA Desktop & Téléphone -->
-            <div class="hidden md:flex items-center gap-6">
-                <a href="tel:0618244725" class="text-right group">
-                    <span class="block text-xs text-taupe group-hover:text-bronze-clair transition-colors">Une urgence ? Appelez-nous</span>
-                    <span class="block text-sm font-bold text-ivoire flex items-center justify-end gap-1 group-hover:text-bronze-clair transition-colors">
-                        <i data-lucide="phone" class="w-3 h-3"></i> 06 18 24 47 25
-                    </span>
-                </a>
-                <a href="#formulaire-devis" class="bg-cta-gradient text-noir-charbon font-bold text-sm px-6 py-2.5 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            <!-- CTA Desktop -->
+            <div class="hidden md:flex items-center">
+                <a href="#formulaire-devis" class="bg-cta-gradient text-noir-charbon font-bold text-sm px-6 py-2.5 rounded-lg shadow-lg shadow-bronze/20 hover:shadow-xl hover:shadow-bronze/30 hover:scale-105 transition-all duration-300 flex items-center gap-2">
                     Recevoir mon devis offert
                 </a>
             </div>
@@ -360,7 +405,8 @@
         <section class="relative bg-noir-profond py-16 lg:py-24 overflow-hidden">
             <!-- Image de fond avec overlay sombre -->
             <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=1920&q=80" alt="Toiture en tuiles canal dans l'Aude" class="w-full h-full object-cover object-center opacity-20" fetchpriority="high">
+                <!-- EMPLACEMENT PHOTO : remplacer par une vraie photo de toiture/chantier dans l'Aude (paysage ~1920x1280, WebP recommandé) -->
+                <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eca?auto=format&fit=crop&w=1920&q=80" alt="Toiture en tuiles canal typique de l'Aude" width="1920" height="1280" class="w-full h-full object-cover object-center opacity-20" fetchpriority="high">
                 <div class="absolute inset-0 bg-dark-gradient opacity-90"></div>
             </div>
 
@@ -419,11 +465,13 @@
                                     <select id="type-travaux" class="w-full bg-white border border-gray-300 text-noir-charbon text-sm rounded-lg focus:ring-bronze-clair focus:border-bronze-clair block p-3 premium-input outline-none transition-shadow" required>
                                         <option value="" disabled selected>Sélectionnez un besoin...</option>
                                         <option value="renovation">Rénovation de toiture</option>
-                                        <option value="couverture">Couverture neuve / Réfection</option>
+                                        <option value="refection">Réfection de couverture</option>
+                                        <option value="couverture">Couverture (tuile, ardoise, zinc)</option>
                                         <option value="charpente">Charpente</option>
-                                        <option value="zinguerie">Gouttières & Zinguerie</option>
+                                        <option value="remaniement">Remaniement de toiture</option>
                                         <option value="fuite">Réparation fuite (Urgence)</option>
                                         <option value="demoussage">Démoussage / Nettoyage</option>
+                                        <option value="hydrofuge">Traitement hydrofuge</option>
                                         <option value="autre">Autre demande</option>
                                     </select>
                                 </div>
@@ -445,7 +493,7 @@
                                 </div>
 
                                 <div class="pt-2">
-                                    <button type="submit" class="w-full bg-cta-gradient text-noir-charbon font-bold text-base px-6 py-4 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+                                    <button type="submit" class="w-full bg-cta-gradient text-noir-charbon font-bold text-base px-6 py-4 rounded-lg shadow-lg shadow-bronze/25 hover:shadow-xl hover:shadow-bronze/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
                                         Demander un devis offert <i data-lucide="arrow-right" class="w-5 h-5"></i>
                                     </button>
                                 </div>
@@ -454,12 +502,6 @@
                                     <i data-lucide="lock" class="w-3 h-3"></i> Vos données sont sécurisées (RGPD).
                                 </p>
 
-                                <div class="mt-4 pt-4 border-t border-gray-200 text-center">
-                                    <p class="text-sm text-taupe mb-1">Ou appelez-nous pour un devis offert par téléphone :</p>
-                                    <a href="tel:0618244725" class="inline-flex items-center gap-2 text-xl font-bold text-bronze hover:text-cuivre transition-colors">
-                                        <i data-lucide="phone-call" class="w-5 h-5"></i> 06 18 24 47 25
-                                    </a>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -467,32 +509,32 @@
             </div>
         </section>
 
-        <section class="py-16 bg-ivoire border-b border-gray-200">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-6">Quand faut-il rénover sa toiture ?</h2>
+        <section class="py-20 bg-ivoire border-b border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-noir-charbon tracking-tight mb-7">Quand faut-il rénover sa toiture ?</h2>
                 <div>
                     <p class="text-taupe leading-relaxed mb-5">Une toiture audoise bien entretenue dure quarante à soixante ans — mais certains signes ne trompent pas : tuiles qui s'effritent ou deviennent poreuses par plaques entières, mousses généralisées malgré les démoussages, liteaux qui plient sous le pas, auréoles récurrentes au plafond, ou charpente attaquée par les insectes. À ce stade, multiplier les réparations ponctuelles revient plus cher qu'une réfection : chaque coup de cers ou d'autan crée un nouveau désordre, et l'eau finit toujours par trouver un chemin.</p>
-                    <p class="text-taupe leading-relaxed mb-5">La rénovation complète remet votre toit à neuf pour plusieurs décennies : dépose de l'ancienne couverture, contrôle et reprise de la charpente, pose d'un écran de sous-toiture — quasi inexistant sur les maisons construites avant les années 1990 —, liteaunage neuf et couverture neuve. C'est aussi le moment idéal pour intégrer une isolation par l'extérieur (sarking) ou remplacer une zinguerie vieillissante, sans payer deux fois l'échafaudage.</p>
+                    <p class="text-taupe leading-relaxed mb-5">La rénovation complète remet votre toit à neuf pour plusieurs décennies : dépose de l'ancienne couverture, contrôle et reprise de la charpente, pose d'un écran de sous-toiture — quasi inexistant sur les maisons construites avant les années 1990 —, liteaunage neuf et couverture neuve. C'est aussi le moment idéal pour remplacer des gouttières vieillissantes, sans payer deux fois l'échafaudage.</p>
 
                 </div>
             </div>
         </section>
 
-        <section class="py-16 bg-ivoire border-b border-gray-200">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-6">Déroulement et budget d'une rénovation de toiture dans l'Aude</h2>
+        <section class="py-20 bg-ivoire border-b border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-noir-charbon tracking-tight mb-7">Déroulement et budget d'une rénovation de toiture dans l'Aude</h2>
                 <div>
-                    <p class="text-taupe leading-relaxed mb-5">Tout commence par une visite technique : l'artisan monte sur le toit, sonde la charpente, contrôle l'état des tuiles et de la zinguerie, puis établit un devis détaillé poste par poste — dépose, traitement éventuel de la charpente, écran, liteaux, couverture, zinguerie, évacuation des gravats. Dans l'Aude, nos couvreurs privilégient les matériaux du pays : tuile canal du Languedoc sur le bâti ancien (souvent en réemploi pour le couvert), tuile mécanique ou romane sur les pavillons, ardoise vers la Montagne Noire et la haute vallée.</p>
-                    <p class="text-taupe leading-relaxed mb-5">Côté budget, comptez généralement entre 150 et 300 € par m² pour une rénovation complète, selon le matériau, la complexité du toit et l'état de la charpente ; une reprise de charpente importante ou un sarking s'ajoutent à cette base. Le chantier d'une maison de 100 m² dure le plus souvent une à deux semaines. Via L'Artisan du Coin, vous comparez jusqu'à trois devis d'artisans audois vérifiés — c'est offert et sans engagement.</p>
+                    <p class="text-taupe leading-relaxed mb-5">Tout commence par une visite technique : l'artisan monte sur le toit, sonde la charpente, contrôle l'état des tuiles et des gouttières, puis établit un devis détaillé poste par poste — dépose, traitement éventuel de la charpente, écran, liteaux, couverture, gouttières, évacuation des gravats. Dans l'Aude, nos couvreurs privilégient les matériaux du pays : tuile canal du Languedoc sur le bâti ancien (souvent en réemploi pour le couvert), tuile mécanique ou romane sur les pavillons, ardoise vers la Montagne Noire et la haute vallée.</p>
+                    <p class="text-taupe leading-relaxed mb-5">Côté budget, chaque toiture est un cas particulier : l'état de la charpente, le matériau choisi, la complexité du toit et les options (écran de sous-toiture, reprise de charpente) font varier le chiffrage du simple au double. Nos artisans ne donnent donc jamais de prix au hasard : le devis, détaillé poste par poste, est établi après la visite technique — offert et sans engagement. Le chantier d'une maison de 100 m² dure le plus souvent une à deux semaines, et via L'Artisan du Coin vous comparez jusqu'à trois propositions d'artisans audois vérifiés.</p>
                     <p class="mt-2"><a href="#formulaire-devis" class="inline-flex bg-cta-gradient text-noir-charbon font-bold text-base px-6 py-3 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 items-center gap-2">Demander un devis <i data-lucide="arrow-right" class="w-4 h-4"></i></a></p>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 bg-ivoire border-t border-gray-200">
+        <section class="py-20 bg-ivoire border-t border-gray-200">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-10 text-center">Questions fréquentes — Rénovation de toiture</h2>
-                <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-noir-charbon tracking-tight mb-10 text-center reveal">Questions fréquentes — Rénovation de toiture</h2>
+                <div class="space-y-4 reveal-group">
                     <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
                         <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
                             Quel est le prix d'une rénovation de toiture dans l'Aude ?
@@ -501,7 +543,19 @@
                             </span>
                         </summary>
                         <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
-                            Comptez généralement entre 150 et 300 € par m² pour une réfection complète (dépose, écran de sous-toiture, couverture neuve), selon le matériau et la complexité du toit. Une reprise de charpente ou une isolation par l'extérieur s'ajoutent à ce budget. Comparez plusieurs devis détaillés : via notre réseau, ils sont offerts et établis après visite.
+                            Le budget dépend du matériau de couverture, de la surface, de la complexité du toit et de l'état de la charpente — deux maisons voisines peuvent avoir des chiffrages très différents. Seule une visite technique permet une estimation sérieuse : via notre réseau, le devis détaillé est offert et sans engagement, et vous comparez plusieurs propositions avant de décider.
+                        </div>
+                    </details>
+
+                    <details class="bg-white rounded-lg border border-gray-200 group [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-noir-charbon">
+                            Rénovation complète ou réfection de couverture : que choisir ?
+                            <span class="transition group-open:rotate-180">
+                                <i data-lucide="chevron-down" class="text-bronze w-5 h-5"></i>
+                            </span>
+                        </summary>
+                        <div class="p-6 pt-0 text-taupe leading-relaxed border-t border-gray-100 mt-2">
+                            Si la charpente est saine, une réfection de couverture suffit : dépose, écran de sous-toiture, couverture neuve et rives, sans toucher à la structure. Si la charpente montre des faiblesses (affaissement, bois attaqués), la rénovation complète s'impose. Le diagnostic se fait lors de la visite technique offerte.
                         </div>
                     </details>
 
@@ -546,8 +600,8 @@
         </section>
 
         <section class="py-16 bg-creme border-t border-gray-200">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-serif font-bold text-noir-charbon mb-4">Nos zones d'intervention dans l'Aude</h2>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-noir-charbon tracking-tight mb-4">Nos zones d'intervention dans l'Aude</h2>
                 <p class="text-taupe max-w-2xl mx-auto mb-8">Cette prestation est proposée par nos artisans partenaires dans tout le département 11, notamment dans les villes suivantes :</p>
                 <div class="flex flex-wrap justify-center gap-3 md:gap-4">
                     <a href="/couvreur-carcassonne/" class="px-5 py-2.5 bg-white border border-gray-200 text-noir-charbon rounded-full text-sm font-medium hover:border-bronze hover:text-bronze transition-colors shadow-sm">Couvreur à Carcassonne</a>
@@ -565,16 +619,12 @@
 
     </main>
 
-    <div class="bg-noir-profond border-t border-bronze/30 py-16 text-center px-4">
-        <h2 class="text-3xl font-serif font-bold text-ivoire mb-4">Besoin d'un couvreur dans l'Aude ?</h2>
-        <p class="text-taupe mb-8 max-w-xl mx-auto">Décrivez votre projet en une minute et recevez jusqu'à 3 devis offerts d'artisans vérifiés près de chez vous.</p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#formulaire-devis" class="inline-flex bg-cta-gradient text-noir-charbon font-bold text-lg px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 items-center gap-2 w-full sm:w-auto justify-center">
-                Demander mon devis offert <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-            </a>
-            <span class="text-taupe hidden sm:inline-block">ou</span>
-            <a href="tel:0618244725" class="inline-flex bg-brun-nuit border border-bronze/30 text-bronze-clair font-bold text-lg px-8 py-4 rounded-lg shadow-xl hover:bg-noir-charbon hover:-translate-y-1 transition-all duration-300 items-center gap-2 w-full sm:w-auto justify-center">
-                <i data-lucide="phone" class="w-5 h-5"></i> 06 18 24 47 25
+    <div class="bg-noir-profond border-t border-bronze/30 py-20 text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-ivoire tracking-tight mb-4 reveal">Besoin d'un couvreur dans l'Aude ?</h2>
+        <p class="text-taupe mb-8 max-w-xl mx-auto reveal">Décrivez votre projet en une minute et recevez jusqu'à 3 devis offerts d'artisans vérifiés près de chez vous.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal">
+            <a href="#formulaire-devis" class="inline-flex bg-cta-gradient text-noir-charbon font-bold text-lg px-8 py-4 rounded-lg shadow-xl shadow-bronze/25 hover:shadow-2xl hover:shadow-bronze/40 hover:-translate-y-1 transition-all duration-300 items-center gap-2 w-full sm:w-auto justify-center">
+                Recevoir mon devis gratuitement <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
             </a>
         </div>
     </div>
@@ -583,7 +633,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                 <div class="col-span-1 md:col-span-1">
-                    <img src="/IMG_1110.jpg" alt="Logo L'Artisan du Coin, couvreurs vérifiés dans l'Aude" class="h-16 w-auto object-contain mix-blend-lighten mb-4 -ml-2" loading="lazy">
+                    <svg class="h-14 w-auto mb-4" viewBox="0 0 250 58" role="img" aria-label="L'Artisan du Coin">
+                        <defs>
+                            <linearGradient id="or-logo-f" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#D4AF7A"/>
+                                <stop offset="1" stop-color="#966F49"/>
+                            </linearGradient>
+                        </defs>
+                        <text x="125" y="32" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="600" font-size="31" letter-spacing="3" fill="url(#or-logo-f)">L&#8217;ARTISAN</text>
+                        <text x="125" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" letter-spacing="9" fill="#CDA97D">DU COIN</text>
+                    </svg>
                     <p class="mb-4">Votre plateforme de mise en relation locale pour vos travaux de toiture dans l'Aude. Indépendante, gratuite et sécurisée.</p>
                     <ul class="space-y-2">
                         <li><a href="tel:0618244725" class="hover:text-bronze-clair transition-colors flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> 06 18 24 47 25</a></li>
@@ -594,14 +653,13 @@
                 <div>
                     <h3 class="text-ivoire font-bold uppercase tracking-wider mb-4 text-xs">Services toiture dans l'Aude</h3>
                     <ul class="space-y-2">
-                        <li><a href="/renovation-toiture-aude/" class="hover:text-bronze-clair transition-colors">Rénovation de toiture dans l'Aude</a></li>
-                        <li><a href="/couverture-aude/" class="hover:text-bronze-clair transition-colors">Couverture : tuile, ardoise, zinc</a></li>
+                        <li><a href="/renovation-toiture-aude/" class="hover:text-bronze-clair transition-colors">Rénovation de toiture</a></li>
+                        <li><a href="/refection-couverture-aude/" class="hover:text-bronze-clair transition-colors">Réfection de couverture</a></li>
+                        <li><a href="/couverture-aude/" class="hover:text-bronze-clair transition-colors">Couverture (tuile, ardoise, zinc)</a></li>
                         <li><a href="/charpente-aude/" class="hover:text-bronze-clair transition-colors">Charpente &amp; traitement du bois</a></li>
-                        <li><a href="/zinguerie-aude/" class="hover:text-bronze-clair transition-colors">Zinguerie &amp; gouttières</a></li>
-                        <li><a href="/isolation-toiture-aude/" class="hover:text-bronze-clair transition-colors">Isolation de toiture par l'extérieur</a></li>
                         <li><a href="/reparation-toiture-aude/" class="hover:text-bronze-clair transition-colors">Réparation de toiture &amp; urgence fuite</a></li>
-                        <li><a href="/demoussage-toiture-aude/" class="hover:text-bronze-clair transition-colors">Démoussage &amp; nettoyage de toiture</a></li>
-                        <li><a href="/hydrofuge-toiture-aude/" class="hover:text-bronze-clair transition-colors">Traitement hydrofuge de toiture</a></li>
+                        <li><a href="/demoussage-toiture-aude/" class="hover:text-bronze-clair transition-colors">Démoussage &amp; nettoyage</a></li>
+                        <li><a href="/hydrofuge-toiture-aude/" class="hover:text-bronze-clair transition-colors">Traitement hydrofuge</a></li>
                     </ul>
                 </div>
 
@@ -641,8 +699,8 @@
     </footer>
 
     <div class="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-noir-profond/95 backdrop-blur-md border-t border-brun-nuit z-50">
-        <a href="#formulaire-devis" class="block w-full text-center bg-cta-gradient text-noir-charbon font-bold text-base px-4 py-3 rounded-lg shadow-lg">
-            Devis Toiture Offert
+        <a href="tel:+33618244725" class="block w-full text-center bg-cta-gradient text-noir-charbon font-bold text-base px-4 py-3 rounded-lg shadow-lg">
+            <i data-lucide="phone" class="w-4 h-4 inline-block -mt-0.5"></i> Appelez-nous au 06 18 24 47 25
         </a>
     </div>
 
@@ -651,6 +709,23 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Initialiser Lucide Icons (script chargé en defer)
             if (window.lucide) lucide.createIcons();
+
+            // Apparitions au scroll — léger, sans layout shift, respecte prefers-reduced-motion
+            const revealTargets = document.querySelectorAll('.reveal, .reveal-group');
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (reduceMotion || !('IntersectionObserver' in window)) {
+                revealTargets.forEach(el => el.classList.add('is-visible'));
+            } else {
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+                revealTargets.forEach(el => io.observe(el));
+            }
 
             // Menu Mobile simple
             const btn = document.getElementById('mobile-menu-btn');
