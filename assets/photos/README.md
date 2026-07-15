@@ -1,15 +1,13 @@
-# Photos du site — mode d'emploi
+# Photos du site
 
-Déposez ici vos vraies photos de chantiers (format paysage, WebP ou JPG optimisé) :
+Photos réelles fournies le 15/07/2026, optimisées en WebP :
 
-| Fichier attendu            | Usage                                   | Taille conseillée |
-|----------------------------|-----------------------------------------|-------------------|
-| `hero-toiture.webp`        | Image de fond du bandeau d'accueil      | 1920 × 1280       |
-| `renovation-toiture.webp`  | Carte « Rénovation de toiture »         | 600 × 400         |
-| `couverture-tuiles.webp`   | Carte « Couverture »                    | 600 × 400         |
-| `charpente-bois.webp`      | Carte « Charpente »                     | 600 × 400         |
-| `refection-couverture.webp`| Carte « Réfection de couverture »       | 600 × 400         |
+| Fichier | Usage | Taille |
+|---|---|---|
+| `hero-toiture.webp` | Fond du bandeau d'accueil (toutes pages) | 1920×1080 |
+| `renovation-toiture.webp` | Carte « Rénovation de toiture » | 900×600 |
+| `couverture-tuiles.webp` | Carte « Couverture » | 900×600 |
+| `charpente-bois.webp` | Carte « Charpente » | 900×600 |
+| `refection-couverture.webp` | Carte « Réfection de couverture » | 900×600 |
 
-Une fois les fichiers déposés, remplacer les URLs `images.unsplash.com` dans les pages
-par `/assets/photos/<fichier>` (les emplacements sont marqués par des commentaires
-`<!-- EMPLACEMENT PHOTO -->` dans le HTML).
+Pour remplacer une photo : écraser le fichier en conservant le même nom et le même format.
